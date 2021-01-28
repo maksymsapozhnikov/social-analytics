@@ -1,0 +1,394 @@
+html,
+body {
+    height: 100%;
+    font-size: 13px;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container, .wrap > .container-fluid {
+    margin-top:55px;
+    width: 80%;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.btn-danger li a {
+    color: white !important;
+}
+
+.variables-group .row:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.variables-group .row:nth-child(even) {
+    background-color: white;
+}
+
+table tbody tr td.danger-column:hover {
+    cursor: pointer;
+    background-color: lightpink;
+}
+
+table tbody tr td.info-column:hover {
+    cursor: pointer;
+    background-color: #d9edf7;
+}
+
+table tbody tr td.info-column span.glyphicon {
+    color: #0d6aad;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.danger-column span.glyphicon {
+    color:darkred;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+table tbody tr td.success-column:hover {
+    cursor: pointer;
+    background-color: #d6e9c6;
+}
+
+#surveys-list td {
+    padding: 5px;
+}
+
+#results-list tbody tr:hover,
+#surveys-list tbody tr:hover{
+    cursor: auto !important;
+    background-color: inherit !important;
+}
+
+.kv-grid-table tbody tr:hover {
+    cursor: pointer;
+    background-color: #d6e9c6;
+}
+
+h1, h2 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 28px;
+}
+
+.kv-checkbox-list label {
+    white-space: nowrap;
+}
+
+.text-trash,
+.text-trash .text-muted {
+    color: #aaaaaa !important;
+}
+
+.highlighted {
+    background-color: #546E7A !important;
+}
+
+.highlighted a,
+.highlighted a:hover {
+    color: #FFF !important;
+}
+
+.bootstrap-tagsinput {
+    width: 100%;
+}
+
+.tag.label {
+    font-size: 100%;
+}
+
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d51d51;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+    animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+    transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+    transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+    transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    } 25%, 75% {
+          -webkit-transform: perspective(140px) rotateX(0deg);
+          transform: perspective(140px) rotateX(0deg);
+          opacity: 1;
+      } 90%, 100% {
+            -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+            opacity: 0;
+        }
+}
+
+@keyframes sk-foldCubeAngle {
+    0%, 10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    } 25%, 75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    } 90%, 100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+.item-status .glyphicon-play {
+    font-size: larger;
+    color: #27ae60 !important;
+}
+.item-status .glyphicon-pause {
+    font-size: larger;
+    color: #7f8c8d !important;
+}
+
+.modal-dialog.modal-xlg {
+    width: 1000px !important;
+}
+
+.modal-dialog.modal-xlg > .modal-content {
+    width: 1000px !important;
+}
+
+.modal-dialog.modal-xlg > .modal-content > .modal-header {
+    height: 40px !important;
+    padding: 1px 15px !important;
+}
+
+.modal-dialog #result-query {
+    font-weight : bold;
+}
+
+.modal-dialog.modal-response .col-md-6 {
+    min-height : 94px;
+}
+.params-notes-content-box .notes{
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+    padding-top: 3px;
+}
+#surveys-list .item-bid input{
+    width: 55px;
+}
+#surveys-list .item-bid .glyphicon-floppy-disk{
+    display: block;
+    margin: 8px auto;
+    width: 30px;
+    font-size: 17px;
+    color: #27ae60;
+}
+#survey-filter .btn[type="submit"]{
+    margin-top: 23px;
+}
+.result-query-wrap{
+    color:#333;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#alias-form .min-height-100{
+    min-height: 100px;
+}
+@media(max-width: 1280px) {
+    .grid-view .table-content{
+        overflow-x: scroll;
+        border: 1px solid #ddd;
+    }
+    #surveys-list-container{
+        border: 1px solid #ddd;
+    }
+    .mob-mt-60{
+        margin-top: 60px;
+    }
+}
+@media(min-width: 768px) and (max-width: 920px) {
+    .navbar-nav.pull-right.nav{
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media(max-width: 992px) {
+    .panel-heading label{
+        padding-top: 10px;
+    }
+    #survey-filter .btn[type="submit"]{
+        margin-top: 35px;
+    }
+}
+@media(max-width: 767px) {
+    .wrap > .container-fluid{
+        width: 100%;
+    }
+    #surveys-list-container .kv-table-wrap th, #surveys-list-container .kv-table-wrap td{
+        display: table-cell;
+    }
+    .mob-mt-60{
+        margin-top: 0px;
+    }
+    .panel-body .export-buttons .dropdown-menu{
+        right: 0;
+        left: auto;
+    }
+
+}
